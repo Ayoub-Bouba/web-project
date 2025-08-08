@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(37, 216, 207, 0.349);
+}
+.d0{
+    display: flex;
+    width: 80%;
+    height: 62%;
+    background-color: #fff;
+    padding: 30px;
+    gap: 50px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px #ffffff5d solid;
+}
+.contact{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 20px;
+}
+header,section,footer{
+    text-align: center;
+    cursor: pointer;
+}
+hr{
+    height: 80%;
+    align-self: center;
+}
+@media(min-width:670px) and (max-width:995px){
+    .d0{
+        flex-flow: column;
+        height: 90%;
+        margin-top: 40px;
+    }
+    .contact{
+        order: 2;
+        display: flex;
+        flex-flow: row;
+    }
+    .msg{
+        order: 1;
+
+    }
+    hr{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+@media (min-width:380px) and (max-width:669px){
+    .d0{
+        flex-flow: column;
+        height: auto;
+        margin-top: 100px;
+    }
+    .contact{
+        order: 2;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .msg{
+        order: 1;
+
+    }
+    hr{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+@media (max-width:379px){
+    .d0{
+        flex-flow: column;
+        height: auto;
+        margin-top: 300px;
+    }
+    .contact{
+        order: 2;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .msg{
+        order: 1;
+
+    }
+    hr{
+        visibility: hidden;
+        position: absolute;
+    }
+    h2{
+        font-size:16px;
+    }
+}
+
+i{
+    color: rgb(102, 51, 153);
+}
+.p2{
+    font-size: small;
+}
+h2{
+    color: rgb(102, 51, 153);
+}
+form{
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    gap: 7px;
+}
+.in{
+    display: flex;
+    
+}
+.input{
+    background-color:rgba(102, 51, 153, 0.233) ;
+    width: 95%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+.p1{
+    width: 95%;
+    letter-spacing: 0.5px;
+    padding: 7px;
+}
+textarea{
+    height: 100px;
+}
+.btn1{
+    background-color: rgb(102, 51, 153);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn1:hover{
+    box-shadow: 0 5px 10px rgba(249, 248, 250, 0.897);
+    background-color: rgba(102, 51, 153, 0.692);
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins",sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    background-color: #0f0c0cbd;
+    color: #ffffffdc;
+}
+.d1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 55px;
+}
+.d2{
+    margin-right: 55px;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+li{
+    list-style: none;
+    padding: 5px 8px;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.877);
+}
+a{
+    text-decoration: none;
+    color: rgba(253, 253, 252, 0.911);
+    font-weight: 500;
+    transition: 0.2s;
+}
+a:hover{
+    color: #000;
+}
+section{
+    background: url(img.jpg) no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+pre{
+    font-size:40px;
+    font-weight: 600;
+    color: #ffffffd8;
+}
+pre::selection{
+    color: #000;
+}
+button{
+    margin-top: 20px;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+.b1{
+    z-index: 100;
+    color: #fff;
+    background-color: #00000049;
+    border: 1px #ffffffbb solid;
+    border-radius: 5px;
+    margin-right: 7px;
+    transition: 0.3s;
+}
+.b1:hover{
+    background-color: #ffffffdc;
+    color: #000;
+}
+.b2{
+    background-color: #ffffffdc;
+    border: none;
+    border-radius: 5px;
+}

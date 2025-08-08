@@ -1,0 +1,128 @@
+*{
+    padding: 0px; 
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+body{
+    
+    color: rgba(255, 255, 255, 0.774);  
+}
+.d0{
+    position: relative;
+    background-image: linear-gradient(to left,#1e1e1e,#5d493d,#927a5e) ;
+    height: 100vh;
+    width: 100%;
+}
+
+.d1{
+    position: fixed;
+    background-color: rgba(255, 255,255, 0.1);
+    width: 280px;
+    height: 100vh;
+    left: -280px;
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.5);
+}
+.menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 30%;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.712);
+}
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.5);
+}
+header a{
+    font-size: 25px;
+    position: absolute;
+}
+ul{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    cursor: pointer;
+    
+}
+li{
+    padding: 14px 20px;
+    transition: 0.2s;
+}
+li:hover{
+    box-shadow: 0 0 10px 1px rgba(224, 253, 249, 0.425);
+    border-left: 1px solid rgba(255, 255, 255, 0.651);
+}
+li a{
+    display: flex;
+    gap: 10px;
+}
+li a i{
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 20px;
+}
+.d3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 27%;
+    gap: 8px;
+}
+.d3 i{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.432);
+    font-size: 25px;
+    transition: 0.2s;
+}
+.d3 i:hover{
+    color: white;
+}
+#check{
+    display: none;
+}
+.d0 .btn_one i{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 15px;
+    line-height: 60px;
+    opacity: 1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.btn_one i:hover{
+    font-size: 24px;
+}
+.d1 .btn_two i{
+    font-size: 25px;
+    position: absolute;
+    left: 240px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear;
+    color: #fff;
+}
+#check:checked ~ .d1{
+    left: 0px;
+}
+#check:checked ~ .d1 .btn_two i{
+    opacity: 1;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}

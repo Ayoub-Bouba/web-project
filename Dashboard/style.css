@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: #ffffffd0;
+    overflow: hidden;
+}
+.dashboard{
+    width: 58px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 2px;
+    transition: all 0.5s ease;
+}
+.dashboard:hover{
+    width: 250px;
+    padding: 0;
+
+}
+.dashboard span{
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-basis: 0;
+    width: 70%;
+}
+a{
+    text-decoration: none;
+    color: #ffffffb0;
+}
+.dashboard span a{
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.dashboard span img{
+    width: 35px;
+    border-radius: 50%;
+    border: solid 2px #fff;
+}
+.dashboard ul{
+    list-style: none;
+    height: 75%;
+    width: 90%;
+    padding: 8px;
+}
+.dashboard ul li{
+    padding: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+.dashboard ul li:hover,nav div:hover,td:hover{
+    background-color: #ffffff54;
+}
+.dashboard ul li i{
+    font-size: 18px;
+    color: #fff;
+}
+.dashboard ul .li{
+    background-color: #ffffff54;
+}
+.dashboard button{
+    padding: 8px;
+    align-self: center;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #ffffff3f;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-basis: 0;
+    gap: 23px;
+}
+.dashboard button i{
+    font-size: 20px;
+}
+.dashboard button:hover{
+    background-color: rgba(255, 0, 0, 0.781);
+    color: #ffffffc5;
+}
+.content{
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+.content header{
+    background-color: rgba(0, 0, 255, 0.89);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.content header a{
+    color: #fff;
+
+}
+.content header i{
+    color: #fff;
+}
+nav{
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-evenly;
+    gap: 8px;
+    height: 160px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+nav div{
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 8px;
+    width: 150px;
+    cursor: pointer;
+}
+nav div i{
+    font-size: 30px;
+}
+nav div p{
+    display: flex;
+    flex-flow: column;
+}
+.products{
+    background-color: rgba(0, 0, 255, 0.89);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: 10px 0;
+}
+.products a{
+    color: #fff;
+}
+section{
+    width: 100%;
+}
+section table{
+    width: 100%;
+    border-spacing: 5px;
+}
+section table tr th{
+    background-color: rgba(0, 0, 255, 0.89);
+    border-radius: 8px;
+    padding: 10px;
+}
+section table tr td{
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+section table tr a{
+    background-color: green;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+section table tr .yl{
+    background-color: rgba(255, 255, 0, 0.733);
+    padding: 10px 0;
+    border-radius: 8px;
+}
